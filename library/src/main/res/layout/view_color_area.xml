@@ -5,8 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
-    android:paddingBottom="24dp"
-    android:paddingTop="24dp"
+    android:paddingBottom="@dimen/_24sdp"
+    android:paddingTop="@dimen/_24sdp"
     tools:ignore="UseCompoundDrawables">
 
     <ImageView
@@ -20,9 +20,9 @@
         android:id="@+id/ld_top_title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
+        android:layout_marginTop="@dimen/_5sdp"
         android:gravity="center"
-        android:textSize="18sp"
+        android:textSize="@dimen/_18ssp"
         android:visibility="gone" />
 
 </LinearLayout>
