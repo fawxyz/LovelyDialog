@@ -19,7 +19,7 @@ dependencies {
     implementation deps.androidxCore
     implementation deps.androidxCompat
     api 'com.intuit.sdp:sdp-android:1.0.5'
-
+    api 'com.intuit.ssp:ssp-android:1.0.5'
 }
 
 afterEvaluate {
