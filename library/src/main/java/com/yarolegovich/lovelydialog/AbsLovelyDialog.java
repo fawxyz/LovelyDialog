@@ -24,7 +24,7 @@ import androidx.core.content.ContextCompat;
  */
 @SuppressWarnings({"unchecked", "WeakerAccess"})
 public abstract class AbsLovelyDialog<T extends AbsLovelyDialog> {
-
+//test commit
     private static final String KEY_SAVED_STATE_TOKEN = "key_saved_state_token";
 
     private Dialog dialog;
