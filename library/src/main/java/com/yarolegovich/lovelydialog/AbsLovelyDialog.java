@@ -226,8 +226,6 @@ public abstract class AbsLovelyDialog<T extends AbsLovelyDialog> {
         return (ViewClass) dialogView.findViewById(id);
     }
 
-    public abstract LovelyAdsDialog setPositiveButton(@StringRes int text, OnClickListener listener);
-
     protected class ClickListenerDecorator implements View.OnClickListener {
 
         private View.OnClickListener clickListener;
