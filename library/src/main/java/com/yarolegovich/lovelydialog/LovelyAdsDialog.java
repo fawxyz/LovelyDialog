@@ -2,6 +2,7 @@ package com.yarolegovich.lovelydialog;
 
 import android.content.Context;
 import android.widget.Button;
+import android.widget.FrameLayout;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 
@@ -30,7 +31,7 @@ public class LovelyAdsDialog extends AbsLovelyDialog<LovelyAdsDialog> {
     private Button positiveButton;
     private Button negativeButton;
     private Button neutralButton;
-    private LinearLayout adContainer;
+    private FrameLayout adContainer;
 
     public LovelyAdsDialog(Context context) {
         super(context);
@@ -56,6 +57,7 @@ public class LovelyAdsDialog extends AbsLovelyDialog<LovelyAdsDialog> {
         adContainer = findView(R.id.ld_ad_container);
     }
 
+    //plz work
     public LovelyAdsDialog setAdView(AdView adView) {
         adContainer.removeAllViews();
         adContainer.addView(adView);
