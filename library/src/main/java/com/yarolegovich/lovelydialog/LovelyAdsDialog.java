@@ -30,9 +30,7 @@ public class LovelyAdsDialog extends AbsLovelyDialog<LovelyAdsDialog> {
     private Button positiveButton;
     private Button negativeButton;
     private Button neutralButton;
-    private AdView adView;
     private LinearLayout adContainer;
-    private String adUnitId;
 
     public LovelyAdsDialog(Context context) {
         super(context);
@@ -55,13 +53,10 @@ public class LovelyAdsDialog extends AbsLovelyDialog<LovelyAdsDialog> {
         positiveButton = findView(R.id.ld_btn_yes);
         negativeButton = findView(R.id.ld_btn_no);
         neutralButton = findView(R.id.ld_btn_neutral);
-        adView = findView(R.id.ld_ad_view);
         adContainer = findView(R.id.ld_ad_container);
     }
 
-    public LovelyAdsDialog setAdView(AdView adView, String adUnitId) {
-        this.adView = adView;
-        this.adUnitId = adUnitId;
+    public LovelyAdsDialog setAdView(AdView adView) {
         adContainer.removeAllViews();
         adContainer.addView(adView);
         return this;

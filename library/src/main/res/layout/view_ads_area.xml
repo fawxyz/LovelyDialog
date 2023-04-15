@@ -9,23 +9,11 @@
     android:paddingTop="@dimen/_24sdp"
     tools:ignore="UseCompoundDrawables">
 
-    <com.google.android.gms.ads.AdView
-        android:id="@+id/ld_ad_view"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/_8sdp"
-        android:layout_marginBottom="@dimen/_8sdp"
-        android:layout_gravity="center_horizontal"/>
-
-    <LinearLayout
+    <FrameLayout
         android:id="@+id/ld_ad_container"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_marginLeft="24dp"
-        android:layout_marginRight="24dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginBottom="16dp"/>
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:minHeight="@dimen/_20sdp" />
 
     <TextView
         android:id="@+id/ld_top_title"
